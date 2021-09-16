@@ -12,6 +12,6 @@ describe('The isFromBellville function test' , function(){
     });
 
     it('should fail when the number plate does not contain "CY"' , function(){
-    assert.equal(isFrom("CJ 98912") , false);
+    assert.equal("CJ 98912" , false);
     })
 });

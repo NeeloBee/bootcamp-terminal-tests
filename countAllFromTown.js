@@ -1,13 +1,14 @@
-module.exports = function allFromTown(fromTown, registrationNumber) {
-    var list = fromTown.split(",");
+module.exports = function countAllFromTown (registrationNumber, fromTown) {
+    var list = registrationNumber.split(",");
     var town = [];
+    let counter = 0;
     for (var i = 0; i < list.length; i++) {
-      if (list[i].includes(registrationNumber) == true) {
-        town.push(list[i].trim());
+      if (list[i].trim().startsWith(fromTown)) {
+        counter++;
       }
     }
 
-    return town;
+    return counter;
     }
 
 //asserts:

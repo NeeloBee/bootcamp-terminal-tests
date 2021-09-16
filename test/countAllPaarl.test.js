@@ -1,6 +1,6 @@
 
 const assert = require('assert');
-const countAllFromPaarl = require('../countAllPaarl');
+const countAllPaarl = require('../countAllPaarl');
 
 
 
